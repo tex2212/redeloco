@@ -8,130 +8,125 @@
 
 body{
 background:#0f172a;
-color:white;
 font-family:Arial;
+color:white;
 text-align:center;
+margin:0;
 }
 
-input{
-padding:10px;
-border-radius:6px;
-border:none;
-margin-top:10px;
+header{
+background:#020617;
+padding:25px;
+font-size:28px;
+font-weight:bold;
 }
 
 .container{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-gap:25px;
-margin-top:40px;
+gap:20px;
+padding:40px;
 }
 
-.item{
+.vip{
 background:#1e293b;
 padding:20px;
-border-radius:10px;
+border-radius:12px;
 width:220px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+.vip img{
+width:120px;
+}
+
+.price{
+font-size:22px;
+margin:10px 0;
+color:#38bdf8;
 }
 
 button{
 background:#22c55e;
 border:none;
-padding:10px;
-border-radius:6px;
-color:white;
+padding:10px 20px;
+border-radius:8px;
+font-size:16px;
 cursor:pointer;
 }
 
+button:hover{
+background:#16a34a;
+}
+
+.nick{
+margin-top:20px;
+}
+
+input{
+padding:10px;
+border-radius:6px;
+border:none;
+}
+
 </style>
-
-<script>
-
-function comprar(item, preco){
-
-let nick = document.getElementById("nick").value
-
-if(nick == ""){
-alert("Digite seu nick do Minecraft")
-return
-}
-
-alert("Compra selecionada:\n\nProduto: " + item + "\nNick: " + nick + "\nValor: " + preco)
-
-}
-
-</script>
 
 </head>
 
 <body>
 
-<h1>Loja Oficial RedeLoco</h1>
-<p>Digite seu nick antes de comprar</p>
+<header>
+RedeLoco - Loja Oficial
+</header>
 
-<input id="nick" placeholder="Seu nick no Minecraft">
+<div class="nick">
+Digite seu nick: <br><br>
+<input placeholder="Seu nick no servidor">
+</div>
 
 <div class="container">
 
-<div class="item">
+<div class="vip">
+<img src="https://mc-heads.net/avatar/Notch">
 <h3>VIP LOCO</h3>
-<p>R$100</p>
-<button onclick="comprar('VIP LOCO','100')">Comprar</button>
+<div class="price">R$100</div>
+<button>Comprar</button>
 </div>
 
-<div class="item">
+<div class="vip">
+<img src="https://mc-heads.net/avatar/Steve">
 <h3>VIP RUBI</h3>
-<p>R$50</p>
-<button onclick="comprar('VIP RUBI','50')">Comprar</button>
+<div class="price">R$50</div>
+<button>Comprar</button>
 </div>
 
-<div class="item">
+<div class="vip">
+<img src="https://mc-heads.net/avatar/Alex">
 <h3>VIP SAFIRA</h3>
-<p>R$35</p>
-<button onclick="comprar('VIP SAFIRA','35')">Comprar</button>
+<div class="price">R$35</div>
+<button>Comprar</button>
 </div>
 
-<div class="item">
+<div class="vip">
+<img src="https://mc-heads.net/avatar/Jeb_">
 <h3>VIP ESMERALDA</h3>
-<p>R$25</p>
-<button onclick="comprar('VIP ESMERALDA','25')">Comprar</button>
+<div class="price">R$25</div>
+<button>Comprar</button>
 </div>
 
-<div class="item">
+<div class="vip">
+<img src="https://mc-heads.net/avatar/Dinnerbone">
 <h3>VIP PÉROLA</h3>
-<p>R$12</p>
-<button onclick="comprar('VIP PÉROLA','12')">Comprar</button>
+<div class="price">R$12</div>
+<button>Comprar</button>
 </div>
 
-<div class="item">
+<div class="vip">
+<img src="https://mc-heads.net/avatar/Herobrine">
 <h3>VIP FLY</h3>
-<p>R$15</p>
-<button onclick="comprar('VIP FLY','15')">Comprar</button>
-</div>
-
-<div class="item">
-<h3>SLIMEFUN DESBLOQUEADO</h3>
-<p>R$20</p>
-<button onclick="comprar('SLIMEFUN','20')">Comprar</button>
-</div>
-
-<div class="item">
-<h3>STAR KEY</h3>
-<p>R$5</p>
-<button onclick="comprar('STAR KEY','5')">Comprar</button>
-</div>
-
-<div class="item">
-<h3>TOOLS LEVEL 10</h3>
-<p>R$5</p>
-<button onclick="comprar('TOOLS 10','5')">Comprar</button>
-</div>
-
-<div class="item">
-<h3>ARMOR LEVEL 10</h3>
-<p>R$10</p>
-<button onclick="comprar('ARMOR 10','10')">Comprar</button>
+<div class="price">R$15</div>
+<button>Comprar</button>
 </div>
 
 </div>
