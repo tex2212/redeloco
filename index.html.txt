@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RedeLoco</title>
+</head>
+<body>
+
+<h1>Loja RedeLoco</h1>
+<p>VIP Bronze - R$10</p>
+<p>VIP Ouro - R$20</p>
+<p>VIP Supremo - R$40</p>
+
+</body>
+</html>
