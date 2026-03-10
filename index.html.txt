@@ -2,14 +2,139 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RedeLoco</title>
+<title>Loja RedeLoco</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+input{
+padding:10px;
+border-radius:6px;
+border:none;
+margin-top:10px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.item{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+width:220px;
+}
+
+button{
+background:#22c55e;
+border:none;
+padding:10px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+</style>
+
+<script>
+
+function comprar(item, preco){
+
+let nick = document.getElementById("nick").value
+
+if(nick == ""){
+alert("Digite seu nick do Minecraft")
+return
+}
+
+alert("Compra selecionada:\n\nProduto: " + item + "\nNick: " + nick + "\nValor: " + preco)
+
+}
+
+</script>
+
 </head>
+
 <body>
 
-<h1>Loja RedeLoco</h1>
-<p>VIP Bronze - R$10</p>
-<p>VIP Ouro - R$20</p>
-<p>VIP Supremo - R$40</p>
+<h1>Loja Oficial RedeLoco</h1>
+<p>Digite seu nick antes de comprar</p>
+
+<input id="nick" placeholder="Seu nick no Minecraft">
+
+<div class="container">
+
+<div class="item">
+<h3>VIP LOCO</h3>
+<p>R$100</p>
+<button onclick="comprar('VIP LOCO','100')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>VIP RUBI</h3>
+<p>R$50</p>
+<button onclick="comprar('VIP RUBI','50')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>VIP SAFIRA</h3>
+<p>R$35</p>
+<button onclick="comprar('VIP SAFIRA','35')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>VIP ESMERALDA</h3>
+<p>R$25</p>
+<button onclick="comprar('VIP ESMERALDA','25')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>VIP PÉROLA</h3>
+<p>R$12</p>
+<button onclick="comprar('VIP PÉROLA','12')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>VIP FLY</h3>
+<p>R$15</p>
+<button onclick="comprar('VIP FLY','15')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>SLIMEFUN DESBLOQUEADO</h3>
+<p>R$20</p>
+<button onclick="comprar('SLIMEFUN','20')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>STAR KEY</h3>
+<p>R$5</p>
+<button onclick="comprar('STAR KEY','5')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>TOOLS LEVEL 10</h3>
+<p>R$5</p>
+<button onclick="comprar('TOOLS 10','5')">Comprar</button>
+</div>
+
+<div class="item">
+<h3>ARMOR LEVEL 10</h3>
+<p>R$10</p>
+<button onclick="comprar('ARMOR 10','10')">Comprar</button>
+</div>
+
+</div>
 
 </body>
 </html>
